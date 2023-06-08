@@ -1,0 +1,38 @@
+PS C:\Users\adgorchili\IdeaProjects\autotestForJob> docker-compose up
+[+] Running 3/3
+ - grafana 9 layers [⠀⣿⣿⠀⠀⠀⠀⠀⠀]      0B/0B      Pulling                                                                                                        38.2s 
+Error response from daemon: Get "https://registry-1.docker.io/v2/": net/http: request canceled (Client.Timeout exceeded while awaiting headers)
+PS C:\Users\adgorchili\IdeaProjects\autotestForJob> docker-compose up
+[+] Running 3/3
+ - influxdb Pulling                                                                                                                                            37.6s 
+ - grafana 9 layers [⠀⣿⠀⣿⠀⠀⠀⠀⠀]      0B/0B      Pulling                                                                                                        37.6s 
+[+] Running 3/3
+ ✘ grafana Error                                                                                                                                               37.8s 
+ ✘ influxdb Error                                                                                                                                              37.8s 
+PS C:\Users\adgorchili\IdeaProjects\autotestForJob>
+
+
+
+                                                    docker-compose up
+no configuration file provided: not found
+PS C:\Users\adgorchili\IdeaProjects\autotestForJob> docker-compose up
+cd : Не удается найти путь "C:\Users\adgorchili\IdeaProjects\autotestForJob\tekegraf", так как он не существует.
+строка:1 знак:1
++ cd tekegraf
++ ~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\adgorc...ForJob\tekegraf:String) [Set-Location], ItemNotFoundException
+ 
+PS C:\Users\adgorchili\IdeaProjects\autotestForJob> cd telegraf
+PS C:\Users\adgorchili\IdeaProjects\autotestForJob\telegraf> docker-compose up
+[+] Running 3/3
+ ✘ grafana Error                                                                                                                                               37.7s 
+ ✘ telegraf Error                                                                                                                                              37.7s 
+ ✘ influxdb Error                                                                                                                                              37.7s 
+Error response from daemon: Get "https://registry-1.docker.io/v2/": net/http: request canceled (Client.Timeout exceeded while awaiting headers)
+PS C:\Users\adgorchili\IdeaProjects\autotestForJob\telegraf> docker-compose up
+[+] Running 3/3
+ ✘ grafana Error                                                                                                                                               37.7s 
+ ✘ telegraf Error                                                                                                                                              37.7s 
+ ✘ influxdb Error                                                                                                                                              37.7s 
+Error response from daemon: Get "https://registry-1.docker.io/v2/": net/http: request canceled (Client.Timeout exceeded while awaiting headers)
+PS C:\Users\adgorchili\IdeaProjects\autotestForJob\telegraf> 
