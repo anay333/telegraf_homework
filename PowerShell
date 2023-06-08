@@ -1,0 +1,66 @@
+6710592d62aa: Already exists
+342d6d3ae9d9: Pull complete
+b674984b4867: Pulling fs layer
+68214bc12b63: Download complete
+275cc6e47c44: Download complete
+error pulling image configuration: download failed after attempts=1: error parsing HTTP 408 response body: invalid character '<' looking for beginning of value: "<html><body><h1>408 Request Time-out</h1>\nYour browser didn't send a complete request in time.\n</body></html>\n"
+PS C:\WINDOWS\system32> docker run --rm hello-world
+Unable to find image 'hello-world:latest' locally
+latest: Pulling from library/hello-world
+719385e32844: Pull complete
+Digest: sha256:fc6cf906cbfa013e80938cdf0bb199fbdbb86d6e3e013783e5a766f50f5dbce0
+Status: Downloaded newer image for hello-world:latest
+
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+    (amd64)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://hub.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/get-started/
+
+PS C:\WINDOWS\system32> docker run --rm hello-world
+
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+    (amd64)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://hub.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/get-started/
+
+PS C:\WINDOWS\system32> docker pull telegraf:alpine
+Error response from daemon: Head "https://registry-1.docker.io/v2/library/telegraf/manifests/alpine": Get "https://auth.docker.io/token?scope=repository%3Alibrary%2Ftelegraf%3Apull&service=registry.docker.io": net/http: request canceled (Client.Timeout exceeded while awaiting headers)
+PS C:\WINDOWS\system32> docker pull quay.io/influxdb/telegraf-nightly:alpine
+Error response from daemon: Get "https://quay.io/v2/": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+PS C:\WINDOWS\system32> docker run -d -p 3000:3000 --name=grafana grafana-custom
+Unable to find image 'grafana-custom:latest' locally
+docker: Error response from daemon: pull access denied for grafana-custom, repository does not exist or may require 'docker login': denied: requested access to the resource is denied.
+See 'docker run --help'.
+PS C:\WINDOWS\system32>
